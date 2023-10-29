@@ -27,21 +27,21 @@ export default function Home() {
         <HeaderPlant />
         <section className='h-full'>
           <div
-            className='flex w-full p-16 items-center justify-between'
+            className='flex flex-col-reverse md:flex-row w-full p-4 md:p-16 items-center justify-between'
           >
             <div
-              className='flex flex-col gap-4 max-w-[45%]'
+              className='flex flex-col gap-4 md:max-w-[45%] items-center md:items-start'
             >
               <h1
-                className='font-semibold text-[#266c42] text-6xl leading-[4.8rem]'
+                className='font-semibold text-[#266c42] text-3xl md:text-6xl md:leading-[4.8rem] text-center md:text-start'
               >
                 Gerencie suas plantas de forma fácil
               </h1>
-              <p className='text-[#5C6660] text-base'>
+              <p className='text-[#5C6660] text-base text-center md:text-justify'>
                 Não esqueça mais de regar suas plantas. Nós cuidamos de lembrar você sempre que precisar.
               </p>
               <Button
-                className='max-w-fit'
+                className='max-w-fit text-lg'
               >
                 Baixar Aplicativo
               </Button>
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className='p-16'
+            className='p-4 md:p-16'
             style={{
               background: 'linear-gradient(113deg, #F5FAF7 0%, #F0F0F0 100%);'
             }}
@@ -92,7 +92,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='p-16'>
+          <div className='p-4 md:p-16'>
             <h1
               className='font-semibold text-[#266c42] text-4xl text-center mb-2'
             >
@@ -101,7 +101,7 @@ export default function Home() {
             <p className='text-[#5C6660] text-base text-center'>
               Baixe gratuitamente o MyPlant e veja como é fácil ter várias plantas, e deixe conosco a tarefa de te lembrar quando regar suas plantinhas
             </p>
-            <div className="flex items-center justify-center gap-6 mt-4">
+            <div className="flex items-center justify-center gap-6 mt-4 flex-col md:flex-row">
               <AppleButton />
               <GoogleButton />
             </div>

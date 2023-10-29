@@ -18,7 +18,6 @@ export const HeaderPlant = () => {
               >
                 Início
               </Link>
-              <Link href="/">Sobre</Link>
           </nav>
       </div>
     </header>
