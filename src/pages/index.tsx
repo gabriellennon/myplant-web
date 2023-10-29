@@ -1,11 +1,11 @@
 import { Jost } from 'next/font/google'
 import Image from 'next/image'
-import Link from 'next/link'
 import LogoImage from '@/assets/images/logo3.png'
-import LogoVerImage from '@/assets/images/logo.png'
 import BannerPlant from '@/assets/images/plantBanner.png'
 import Head from 'next/head'
 import { Button } from '@/components/ui/button'
+import { HeaderPlant } from '@/components/HeaderPlant'
+import { FooterPlant } from '@/components/FooterPlant'
 
 const jost = Jost({ subsets: ['latin'] })
 
@@ -18,25 +18,7 @@ export default function Home() {
       <main
         className={`min-h-screen ${jost.className}`}
       >
-        <header className='px-16 border-b'>
-            <div className='flex h-16 items-center justify-between'>
-                <Image
-                  src={LogoImage}
-                  width={80}
-                  height={80}
-                  alt="myPlant"
-                />
-                <nav className="ml-auto flex items-center gap-3 font-normal text-[#52665A] transition ease-in-out delay-100">
-                    <Link 
-                      className='hover:scale-110 hover:duration-300'
-                      href="/"
-                    >
-                      Início
-                    </Link>
-                    <Link href="/">Sobre</Link>
-                </nav>
-            </div>
-        </header>
+        <HeaderPlant />
         <section className='h-full'>
           <div
             className='flex w-full p-16 items-center justify-between'
@@ -105,32 +87,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer 
-          className='px-16 py-5 bg-[#DAF2E4] flex items-center justify-between'
-        >
-          <div>
-            <Image
-              src={LogoVerImage}
-              width={60}
-              height={60}
-              alt="myPlant"
-            />
-          </div>
-          <div className='flex flex-col gap-2'>
-            <Link 
-              href="/"
-              className='text-[#52665A] font-semibold text-sm'
-            >
-              Políticas de privacidade
-            </Link>
-            <Link 
-              href="/"
-              className='text-[#52665A] font-semibold text-sm'
-            >
-              Termos de uso
-            </Link>
-          </div>
-        </footer>
+        <FooterPlant />
       </main>
     </>
   )
