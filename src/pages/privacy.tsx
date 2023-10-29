@@ -16,7 +16,7 @@ export default function privacy(){
     >
       <HeaderPlant />
       <section className='h-full'>
-        <div className='p-16'>
+        <div className='p-4 md:p-16'>
           <h1
             className='font-semibold text-[#266c42] text-6xl leading-[4.8rem]'
           >

@@ -23,7 +23,7 @@ export const FooterPlant = () => {
           Políticas de privacidade
         </Link>
         <Link 
-          href="/"
+          href="/terms"
           className='text-[#52665A] font-semibold text-sm'
         >
           Termos de uso
